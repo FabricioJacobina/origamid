@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bikcraft - Contato</title>
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/grid.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/contatos.css">
+  <link rel="stylesheet" href="assets/css/responsivo.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+
+<body>
+
+  <!--Header do site-->
+
+  <header class="header">
+    <div class="container">
+      <a class="grid-3" href="index.html"><img src="assets/img/bikcraft.svg" alt="logotipo apenas com um retangulo escrito bikcraft"></a>
+      <nav class="header_menu grid-12">
+        <ul>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="portifolio.html">Portifólio</a></li>
+          <li><a href="contatos.html" class="menu-ativo">Contatos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--Introdução Contato-->
+
+  <section class="introducao-interna interna-contato">
+    <div class="container">
+      <h1 data-anime="500">Contato</h1>
+      <p data-anime="1000">Tire as suas dúvidas com a gente</p>
+    </div>
+  </section>
+
+  <!--Contato-->
+
+  <section class="contato container" data-anime="1500">
+    <form action="assets/php/enviar-sendgrid.php" class="form grid-8 formphp" method="POST">
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" id="nome" required>
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" required>
+      <label for="telefone">Telefone</label>
+      <input type="text" name="telefone" id="telefone">
+      <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+      <input type="text" name="leaveblank" class="nao-aparece">
+      <label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+      <input type="text" name="dontchange" class="nao-aparece" value="http://">
+      <label for="espec">Especificações</label>
+      <textarea name="espec" id="espec" required></textarea>
+      <button type="submit" class="btn btn-preto" id="enviar" name="enviar">Enviar</button>
+    </form>
+    <div class="contatos-dados grid-5">
+      <h3>Dados</h3>
+      <span>+55 (99) 9 9999-9999</span>
+      <span>orcamento@bickraft.com</span>
+      <span>Rua Ali Perto - Botafogo</span>
+      <span>Rio de Janeiro - RJ</span>
+      <h3>Redes sociais</h3>
+      <ul>
+        <li><a href="https://www.facebook.com/" target="_blank"><img src="assets/img/redes-sociais/facebook.svg"></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank"><img src="assets/img/redes-sociais/instagram.svg"></a></li>
+        <li><a href="https://www.twitter.com/" target="_blank"><img src="assets/img/redes-sociais/twitter.svg"></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!--Mapa-->
+
+  <section class="mapa container">
+    <a href="https://www.google.com.br/maps/@-22.9518692,-43.2100908,2a,90y,256.97h,100.98t/data=!3m6!1e1!3m4!1sgKhdh43qMNHt1DAmGCltdw!2e0!7i13312!8i6656" target="_blank" class="grid-16"><img src="assets/img/endereco-bikcraft.jpg" alt="Endereço da Bikcraft"></a>
+  </section>
+
+  <!--Quote-->
+
+  <section class="quebra">
+    <blockquote class="quote-externo container">
+      <p>“O verdadeiro segredo da felicidade está em ler um genuíno interesse por todos os detalhes da vida cotidiana”</p>
+      <cite>William Morris</cite>
+    </blockquote>
+  </section>
+
+  <!--Footer-->
+
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="grid-8 footer_historia">
+          <h3>Nossa história</h3>
+          <p>O verdadeiro segredo da felicidade está em ler um genuíno interesse por todos os detalhes da vida cotidiana interesse por todos os detalhes da vida cotidiana</p>
+        </div>
+        <div class="grid-4 footer_contato">
+          <h3>Contato</h3>
+          <ul>
+
+            <li>- (99) 9 9999-9999</li>
+
+            <li>- contato@bikcraft.com</li>
+
+            <li>- Ilha Da Magia - SC</li>
+
+          </ul>
+        </div>
+        <div class="grid-4 footer_redes">
+          <h3>Redes sociais</h3>
+          <ul>
+
+            <li><a href="https://www.facebook.com/" target="_blank"><img src="assets/img/redes-sociais/facebook.svg"></a></li>
+
+            <li><a href="https://www.instagram.com/" target="_blank"><img src="assets/img/redes-sociais/instagram.svg"></a></li>
+
+            <li><a href="https://www.twitter.com/" target="_blank"><img src="assets/img/redes-sociais/twitter.svg"></a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copy">
+      <div class="container">
+        <p class="grid-16">Bikcraft 2021&copy; - Alguns direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/simple-anime.js"></script>
+  <script src="assets/js/simple-form.js"></script>
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
