@@ -1,0 +1,22 @@
+p {
+  color: darkgoldenrod;
+  background-color: darkgreen;
+  font-size: 50px;
+}
+
+a {
+  border: 4px solid #fff;
+  padding: 50px;
+}
+
+div {
+  background-color: #ddd;
+  color: #00F;
+  width: 400px;
+  height: 400px;
+  cursor: pointer;
+}
+
+div a {
+  color: darkcyan;
+}

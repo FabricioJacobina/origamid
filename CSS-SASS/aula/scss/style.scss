@@ -1,0 +1,14 @@
+@import "../css/colors";
+@import "../css/link";
+$preto: #ddd;
+$azul: #00F;
+div{
+  background-color: $preto;
+  color: $azul;
+  width: 400px;
+  height: 400px;
+  cursor: pointer;
+  a{
+    color: darkcyan;
+  }
+}
