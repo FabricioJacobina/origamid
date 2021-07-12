@@ -329,3 +329,121 @@ h2.produtos-mineiro::before{
   display: block;
   margin: 0 10px;
 }
+
+/* Responsivo */
+
+@media only screen and (min-width: 740px) and (max-width: 980px){
+  .sobre-container{
+    max-width: 720px;
+  }
+  .sobre-item{
+    width: 340px;
+  }
+  .produtos-container{
+    max-width: 720px;
+  }
+  .produtos-item{
+    width: 220px;
+  }
+  .produtos-item h2{
+    font-size: 2em;
+  }
+  .locais{
+    max-width: 720px;
+  }
+  .locais-item > div, .locais-item img{
+    width: 340px;
+  }
+  .locais-item h2{
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  .locais-item p{
+    margin-bottom: 30px;
+  }
+  .newsletter-container{
+    max-width: 720px;
+  }
+  .newsletter-info{
+    width: 340px;
+  }
+  .newsletter form{
+    width: 340px;
+  }
+  .newsletter input{
+    width: 340px;
+  }
+}
+@media only screen and (max-width: 739px){
+  .menu{
+    text-align: center;
+  }
+  a.menu-logo{
+    float: none;
+    margin: 0 auto;
+  }
+  .menu-nav{
+    float: none;
+    clear: both;
+  }
+  .intro{
+    padding: 60px 0;
+  }
+  .intro h1{
+    font-size: 2.5em;
+  }
+  .sobre-container{
+    max-width: 300px;
+  }
+  .sobre-item{
+    width: 300px;
+    margin: 0 auto;
+  }
+  .produtos-container{
+    max-width: 300px;
+  }
+  .produtos-item{
+    margin: 0 auto 20px auto;
+  }
+  .produtos-item h2{
+    font-size: 2em;
+  }
+  .locais{
+    max-width: 300px;
+  }
+  .locais-item > div, .locais-item img{
+    width: 300px;
+    margin: 0;
+  }
+  .locais-item h2{
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  .locais-item p{
+    margin-bottom: 20px;
+  }
+  .newsletter-container{
+    max-width: 300px;
+  }
+  .newsletter-info{
+    width: 300px;
+  }
+  .newsletter form{
+    width: 300px;
+    margin: 10px auto 10px auto;
+  }
+  .newsletter input{
+    width: 300px;
+  }
+  .footer-container{
+    max-width: 300px;
+  }
+  .footer p{
+    float: none;
+    margin: 0px;
+  }
+  .footer img{
+    float: none;
+    margin-top: 20px 0;
+  }
+}
