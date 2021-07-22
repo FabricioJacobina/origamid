@@ -53,3 +53,52 @@ img{
   transition: 300ms ease-in-out;
   color: #C17139;
 }
+
+/* Main */
+.main-container::before, .main-container::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Side Nav*/
+.side-nav{
+  width: 300px;
+  background-color: #252525;
+  float: left;
+}
+.side-nav li a{
+  display: block;
+  color: #FFF;
+  border-bottom: 2px solid #484848;
+  font-size: 1.125em;
+  padding: 15px 20px 20px 20px;
+}
+.side-nav li a::before{
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 5px;
+  margin-right: 15px;
+  background-image: url('../img/icones.png');
+}
+.nav-contabilidade::before{
+  background-position: 0 0;
+}
+.nav-produtos::before{
+  background-position: 0 -24px;
+}
+.nav-paginas::before{
+  background-position: 0 -48px;
+}
+.nav-plugins::before{
+  background-position: 0 -72px;
+}
+.nav-formularios::before{
+  background-position: 0 -94px;
+}
+.nav-hospedagem::before{
+  background-position: 0 -118px;
+}
