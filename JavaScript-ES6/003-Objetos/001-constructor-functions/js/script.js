@@ -1,29 +1,52 @@
-function Carro(marcaAtribuida, precoAtribuido) {
-  this.marca = marcaAtribuida;
-  this.preco = precoAtribuido;
+// Transforme o objeto abaixo em uma constructor Function
+const pessoa = {
+  nome: "Nome da Pessoa",
+  idade: 0,
+  andar() {
+    console.log(this.nome + " andou");
+  },
+};
+
+function Pessoa(nome, idade) {
+  this.nome = nome;
+  this.idade = idade;
+  this.andar = function () {
+    console.log(this.nome + ", tem " + this.idade + " anos e está andando.");
+  };
 }
-const honda = new Carro();
-honda.marca = "Honda";
-honda.preco = 9000;
 
-const fiat = new Carro();
-fiat.marca = "fiat";
-fiat.preco = 7800;
+// Crie 3 pessoas
+/*
+ * João - 20 anos
+ * Maria - 25 anos
+ * Bruno - 15 anos
+ */
 
-const chevrolet = new Carro("Chevrolet", 3000);
+const joao = new Pessoa("João", 20);
+const maria = new Pessoa("Maria", 25);
+const bruno = new Pessoa("Bruno", 15);
 
-const renault = new Carro();
-// Cria um novo objeto
-renault = {};
-// Define o protótipo
-renault.prototype = Carro.prototype;
-// Aponta a variável this para o objeto
-this = renault
-// Executa a função, substituindo this pelo objeto
-renault.marca = "Renault";
-renault.preco = 5000;
-// Retorna o novo objeto
-return (renault = {
-  marca: "Renault",
-  preco: 5000,
-});
+// Crie uma constructor Function (Dom) para manipulação de listas de elementos do dom. Deve conter as seguintes propriedades e métodos:
+/*
+ * elements, retorna NodeList com os elementos selecionados
+ * addClass(classe), adiciona a classe a todos os elementos
+ * removeClass(classe), remove a classe a todos os elementos.
+ */
+
+function Dom(seletor) {
+  const elementList = document.querySelectorAll(seletor);
+  this.elements = elementList;
+  this.addClass = function (classe) {
+    elementList.forEach((element) => {
+      element.classList.add(classe);
+    });
+  };
+  this.removeClass = function (classe) {
+    elementList.forEach((element) => {
+      element.classList.remove(classe);
+    });
+  };
+}
+const lista = new Dom("li");
+lista.addClass("ativar");
+lista.removeClass("ativar");
