@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch</title>
+  </head>
+  <body>
+    <style>
+      label,
+      input {
+        display: block;
+      }
+    </style>
+    <form id="buscaCep">
+      <label for="cep">CEP</label>
+      <input type="text" name="cep" id="cep" />
+      <input type="button" value="Buscar CEP" id="btnCep" />
+    </form>
+    <div class="resultadoCep"></div>
+    <div>
+      <h2>Preço BTC</h2>
+      <span class="btc"></span>
+    </div>
+    <div>
+      <p class="piadaDisplay"></p>
+      <button class="proxima" style="cursor: pointer">Próxima</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
