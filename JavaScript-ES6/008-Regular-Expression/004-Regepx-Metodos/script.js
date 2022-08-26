@@ -39,7 +39,9 @@ const tags = `
 </ul>
 `;
 const regexpTags = /(?<=<\/?)\w+/g;
+
 const resultado = tags.replace(regexpTags, "div");
+
 console.log(resultado);
 // <div>
 //   <div>Item 1</div>
